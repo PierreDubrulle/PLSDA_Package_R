@@ -33,10 +33,10 @@ plsda.scale<-function(X, center=TRUE, scale=TRUE ){
   if (is.logical(center)) {
     if (center) {
       X<-t(apply(X,1,function(x){ return(x-apply(X,2,mean))}))
-      print(system.time(t(apply(X,1,function(x){ return(x-apply(X,2,mean))}))))
-      print(system.time(sweep(X,1,'-', STATS = colMeans(X))))
-      print(X)
-      print(sweep(X,1,'-', STATS = colMeans(X)))
+      #print(system.time(t(apply(X,1,function(x){ return(x-apply(X,2,mean))}))))
+      #print(system.time(sweep(X,1,'-', STATS = colMeans(X))))
+      #print(X)
+      #print(sweep(X,1,'-', STATS = colMeans(X)))
 
     }
   }
