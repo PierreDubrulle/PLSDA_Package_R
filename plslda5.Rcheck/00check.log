@@ -14,8 +14,111 @@
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking whether package ‘plslda5’ can be installed ... ERROR
-Installation failed.
-See ‘/home/pierre/Documents/Master/Semestre_1/R/projet/PLSDA_Package_R/plslda5.Rcheck/00install.out’ for details.
+* checking whether package ‘plslda5’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Spécification de licence non standard :
+  What license is it under?
+Standardisable : FALSE
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... WARNING
+Found the following file with non-ASCII characters:
+  scale.r
+Portable packages must use only ASCII characters in their R code,
+except perhaps in comments.
+Use \uxxxx escapes for other characters.
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... WARNING
+print:
+  function(x, ...)
+print.PLSDA:
+  function(object)
+
+summary:
+  function(object, ...)
+summary.PLSDA:
+  function(object, ncomp)
+
+See section ‘Generic functions and methods’ in the ‘Writing R
+Extensions’ manual.
+
+Found the following apparent S3 methods exported but not registered:
+  print.PLSDA summary.PLSDA
+See section ‘Registering S3 methods’ in the ‘Writing R Extensions’
+manual.
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+backward: no visible global function definition for ‘model.matrix’
+backward: no visible binding for global variable ‘formula’
+backward: no visible global function definition for ‘model.response’
+backward: no visible global function definition for ‘model.frame’
+backward: no visible global function definition for ‘cov’
+backward : <anonymous>: no visible global function definition for ‘cov’
+fit: no visible global function definition for ‘model.matrix’
+fit: no visible global function definition for ‘model.response’
+fit: no visible global function definition for ‘model.frame’
+fit: no visible binding for global variable ‘var’
+fit: no visible global function definition for ‘aggregate’
+fit: no visible binding for global variable ‘cov’
+fit: no visible binding for global variable ‘sd’
+plsda.cv: no visible global function definition for ‘model.matrix’
+plsda.cv: no visible global function definition for ‘model.response’
+plsda.cv: no visible global function definition for ‘model.frame’
+plsda.nipals: no visible global function definition for ‘cor’
+plsda.scale: no visible binding for global variable ‘x’
+plsda.scale : <anonymous>: no visible binding for global variable ‘var’
+test.retrait: no visible global function definition for ‘pf’
+Undefined global functions or variables:
+  aggregate cor cov formula model.frame model.matrix model.response pf
+  sd var x
+Consider adding
+  importFrom("stats", "aggregate", "cor", "cov", "formula",
+             "model.frame", "model.matrix", "model.response", "pf", "sd",
+             "var")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Objets code non documentés :
+  ‘backward’ ‘fit’ ‘plsda.cv’ ‘plsda.dummies’ ‘plsda.nipals’
+  ‘plsda.predict’ ‘plsda.scale’ ‘plsda.split_sample’ ‘print.PLSDA’
+  ‘summary.PLSDA’ ‘test.retrait’
+All user-level objects in a package should have documentation entries.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking for code/documentation mismatches ... WARNING
+Fonctions ou méthodes avec 'usage' dans la documentation de l'objet 'hello', mais pas dans le code :
+  ‘hello’
+
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in ‘plslda5-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: hello
+> ### Title: Hello, World!
+> ### Aliases: hello
+> 
+> ### ** Examples
+> 
+> hello()
+Error in hello() : could not find function "hello"
+Execution halted
+* checking PDF version of manual ... OK
 * DONE
-Status: 1 ERROR
+Status: 1 ERROR, 4 WARNINGs, 2 NOTEs

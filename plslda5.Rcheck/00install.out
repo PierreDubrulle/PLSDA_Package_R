@@ -1,10 +1,11 @@
 * installing *source* package ‘plslda5’ ...
 ** using staged installation
 ** R
-Error in parse(outFile) : 
-  /home/pierre/Documents/Master/Semestre_1/R/projet/PLSDA_Package_R/plslda5.Rcheck/00_pkg_src/plslda5/R/cv.R:72:75: ')' inattendu(e)
-71:       #on calcule le press pour le ième échantillon
-72:       press[i] <- sum(sweep(as.matrix(Y.test), 1, as.matrix(pred), '-')^2))
-                                                                              ^
-ERROR: unable to collate and parse R files for package ‘plslda5’
-* removing ‘/home/pierre/Documents/Master/Semestre_1/R/projet/PLSDA_Package_R/plslda5.Rcheck/plslda5’
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (plslda5)
