@@ -69,7 +69,8 @@ plsda.cv<-function(formula,data){
       pred <- plsda.dummies(pred, Y)
 
       #on calcule le press pour le ième échantillon
-      press[i] <- sum(sweep(as.matrix(Y.test), 1, as.matrix(pred), '-')^2)
+      #press[i] <- sum(sweep(as.matrix(Y.test), 1, as.matrix(pred), '-')^2)
+      press[i] <- sum(as.matrix(Y.test) - as.matrix(pred)^2)
 
     }
     PRESS[j] <-as.numeric(sum(press))
